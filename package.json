@@ -1,0 +1,24 @@
+{
+  "name": "eks-app",
+  "version": "1.0.0",
+  "description": "This POC setup is used to deploy the Node.js application on EKS with CodePipeline.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gokul3031/node-eks-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gokul3031/node-eks-app/issues"
+  },
+  "homepage": "https://github.com/Gokul3031/node-eks-app#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
