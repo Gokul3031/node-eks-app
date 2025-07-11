@@ -1,0 +1,19 @@
+apiVersion: apps/v1                  # Tells Kubernetes what API version to use
+kind: Deployment                     # You're creating a "Deployment" type
+metadata:
+  name: node-eks-app                 # Logical name of your deployment
+spec:
+  replicas: 2                        # Run 2 Pods (your app runs twice)
+  selector:
+    matchLabels:
+      app: node-eks-app              # Find pods with this label
+  template:                          # Define how Pods should be created
+    metadata:
+      labels:
+        app: node-eks-app
+    spec:
+      containers:
+      - name: nodejs
+        image: 034362071514.dkr.ecr.ap-south-1.amazonaws.com/node-eks-app:latest
+        ports:
+        - containerPort: 3000        # Port your app listens on (inside the container)
