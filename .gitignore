@@ -1,2 +1,4 @@
-.dockerignore
-node_modules
+# Example resolved version:
+node_modules/
+.env
+k8s/
